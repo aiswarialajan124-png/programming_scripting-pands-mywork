@@ -1,4 +1,4 @@
-percentage = float(input("Enter the percentage: "))
+percentage = round(float(input("Enter the percentage: ")))
 
 if percentage < 0 or percentage > 100:
     print("Please enter number between 0 and 100")
