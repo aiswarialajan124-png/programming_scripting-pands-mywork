@@ -1,14 +1,17 @@
-percentage = round(float(input("Enter the percentage: ")))
+percentage = round(float(input("Enter the percentage (-1 to quit): ")))
 
-if percentage < 0 or percentage > 100:
-    print("Please enter number between 0 and 100")
-elif percentage < 40:
-    print("Fail")
-elif percentage < 50:
-    print("Pass")
-elif percentage < 60:
-    print("Merit 2")
-elif percentage < 70:
-    print("Merit 1")
-else:
-    print("Distinction")
+while percentage != -1:
+    if percentage < 0 or percentage > 100:
+        print("Please enter number between 0 and 100")
+    elif percentage < 40:
+        print("Fail")
+    elif percentage < 50:
+        print("Pass")
+    elif percentage < 60:
+        print("Merit 2")
+    elif percentage < 70:
+        print("Merit 1")
+    else:
+        print("Distinction")
+
+    percentage = float(input("Enter the percentage (-1 to quit): "))
