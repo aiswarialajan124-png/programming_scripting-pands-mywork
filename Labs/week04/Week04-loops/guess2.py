@@ -1,4 +1,6 @@
-numberToGuess = 30
+import random
+
+numberToGuess = random.randint(0,100)
 guess = int(input("Please guess the number: "))
 
 while guess != numberToGuess:
